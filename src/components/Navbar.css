@@ -24,3 +24,54 @@ background-size: 30px;
   } */
 
  
+
+ /* Navbar and content styling */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.auth-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.auth-buttons button {
+  margin: 10px;
+}
+
+/* Form styling */
+.sign-up-form, .sign-in-form {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+.sign-up-form h2, .sign-in-form h2 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin: 8px 0 4px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}

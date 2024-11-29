@@ -1,62 +1,20 @@
-import React, { useState } from 'react';
-import './Signin.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-const SignIn = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [error, setError] = useState('');
+import React from 'react';
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (password !== confirmPassword) {
-      setError("Passwords do not match!");
-      return;
-    }
-
-    // Here you would typically call an API to create the user
-    console.log('Sign In Submitted', { email, password });
-    setError('');
-    alert('Account created successfully!');
-  };
-
+export default function Signin() {
   return (
-    <div className="sign-in">
-      <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email:</label>
-          <input 
-            type="email" 
-            value={email}
-            onChange={(e) => setEmail(e.target.value)} 
-            required 
-          />
+    <div className="signin-container">
+      <h2>Sign In</h2>
+      <form>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email address</label>
+          <input type="email" className="form-control" id="email" placeholder="Enter your email" />
         </div>
-        <div>
-          <label>Password:</label>
-          <input 
-            type="password" 
-            value={password}
-            onChange={(e) => setPassword(e.target.value)} 
-            required 
-          />
+        <div className="mb-3">
+          <label htmlFor="password" className="form-label">Password</label>
+          <input type="password" className="form-control" id="password" placeholder="Enter your password" />
         </div>
-        <div>
-          <label>Confirm Password:</label>
-          <input 
-            type="password" 
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)} 
-            required 
-          />
-        </div>
-        {error && <div style={{color: 'red'}}>{error}</div>}
-        <button type="submit">Sign Up</button>
+        <button type="submit" className="btn btn-primary">Sign In</button>
       </form>
     </div>
   );
-};
-
-export default SignIn;
+}
