@@ -1,0 +1,53 @@
+/* Review Section Styling */
+.container1 {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .Review_h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .review-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px); /* Moves the card slightly up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    background-color: #ffd700; /* Yellow background on hover */
+    color: black; /* Text color changes to black */
+  }
+  
+  .review-card h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Swiper Styling */
+  .mySwiper {
+    margin-top: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #555;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #007bff;
+  }
+  

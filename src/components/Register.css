@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../assets/video1.mp4") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  text-align: center;
+}
+
+header {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+span a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.input-box {
+  margin: 15px 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-field:focus {
+  border-color: #00bfff;
+  outline: none;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background: #00bfff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #66d9ff;
+}

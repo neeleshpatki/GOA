@@ -1,0 +1,121 @@
+/* General Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #0056b3;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Tabs for Sign In and Sign Up */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #007bff;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+  }
+  
+  .tab:hover {
+    color: #0056b3;
+  }
+  
+  .tab.active {
+    font-weight: bold;
+    border-bottom: 3px solid #007bff;
+  }
+  
+  /* Form Box Styling */
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .two-col {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .two-col a {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .two-col a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tab {
+      font-size: 0.9rem;
+    }
+  
+    .submit {
+      font-size: 0.9rem;
+    }
+  
+    .modal-body {
+      padding: 15px;
+    }
+  }
+  
